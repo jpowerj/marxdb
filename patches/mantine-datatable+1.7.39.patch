@@ -1,0 +1,22 @@
+diff --git a/node_modules/mantine-datatable/dist/DataTableRow.d.ts b/node_modules/mantine-datatable/dist/DataTableRow.d.ts
+index 88585da..e4bd770 100644
+--- a/node_modules/mantine-datatable/dist/DataTableRow.d.ts
++++ b/node_modules/mantine-datatable/dist/DataTableRow.d.ts
+@@ -7,7 +7,7 @@ type DataTableRowProps<T> = {
+     recordIndex: number;
+     columns: DataTableColumn<T>[];
+     defaultColumnRender: ((record: T, index: number, accessor: string) => ReactNode) | undefined;
+-    selectionVisible: boolean;
++    //selectionVisible: boolean;
+     selectionChecked: boolean;
+     onSelectionChange: ChangeEventHandler<HTMLInputElement> | undefined;
+     isRecordSelectable: ((record: T, index: number) => boolean) | undefined;
+@@ -22,6 +22,6 @@ type DataTableRowProps<T> = {
+     contextMenuVisible: boolean;
+     leftShadowVisible: boolean;
+ };
+-export default function DataTableRow<T>({ record, recordIndex, columns, defaultColumnRender, selectionVisible, selectionChecked, onSelectionChange, isRecordSelectable, onClick, onCellClick, onContextMenu, expansion, customRowAttributes, className, style, sx, contextMenuVisible, leftShadowVisible, }: DataTableRowProps<T>): JSX.Element;
++export default function DataTableRow<T>({ record, recordIndex, columns, defaultColumnRender, selectionChecked, onSelectionChange, isRecordSelectable, onClick, onCellClick, onContextMenu, expansion, customRowAttributes, className, style, sx, contextMenuVisible, leftShadowVisible, }: DataTableRowProps<T>): JSX.Element;
+ export {};
+ //# sourceMappingURL=DataTableRow.d.ts.map
+\ No newline at end of file

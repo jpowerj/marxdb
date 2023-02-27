@@ -1,0 +1,7 @@
+.modal-link a {
+    text-decoration: underline;
+}
+
+.modal-link:hover {
+    text-decoration: none;
+}
